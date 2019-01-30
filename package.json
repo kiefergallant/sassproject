@@ -1,0 +1,24 @@
+{
+  "name": "sassproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiefergallant/sassproject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kiefergallant/sassproject/issues"
+  },
+  "homepage": "https://github.com/kiefergallant/sassproject#readme",
+  "dependencies": {
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "sass": "^1.16.1"
+  }
+}
