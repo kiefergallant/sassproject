@@ -1,11 +1,11 @@
 {
   "name": "sassproject",
   "version": "1.0.0",
-  "description": "",
+  "description": "James & Kiefer",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "./node_modules/.bin/gulp watch"
+    "sass": "gulp sass",
+    "watch": "gulp watch"
   },
   "repository": {
     "type": "git",
@@ -17,9 +17,10 @@
     "url": "https://github.com/kiefergallant/sassproject/issues"
   },
   "homepage": "https://github.com/kiefergallant/sassproject#readme",
-  "dependencies": {
-    "gulp": "^4.0.0",
-    "gulp-sass": "^4.0.2",
-    "sass": "^1.16.1"
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-sass": "latest",
+    "gulp-csso": "latest",
+    "fancy-log": "latest"
   }
 }
