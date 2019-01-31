@@ -22,5 +22,6 @@
     "gulp-sass": "latest",
     "gulp-csso": "latest",
     "fancy-log": "latest"
-  }
+  },
+  "dependencies": {}
 }

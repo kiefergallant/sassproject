@@ -1,0 +1,33 @@
+@import 'global';
+
+#logo {
+  // Logo Layout
+  margin-right: 1em;
+}
+
+#help {
+  // Link Layout
+  display: block;
+  float: right;
+}
+
+.navigation {
+  // Navigation Styles
+  background-color: $bg-secondary;
+  padding: 1em;
+  width: 100%;
+}
+
+.navigation a {
+  // Navigation Link
+  color: $text-primary;
+  font-size: 1.5em;
+  font-family: $font-secondary;
+  margin-right: 2em;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  // Navigation Link Hover
+  color: $card;
+}

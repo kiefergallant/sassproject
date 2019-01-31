@@ -1,0 +1,34 @@
+@import 'global';
+
+#fb,
+#li,
+#sc {
+  // Icon Layout
+  color: $text-primary;
+}
+
+#fb:hover {
+  color: $icon1;
+}
+
+#sc:hover {
+  color: $icon2;
+}
+
+#li:hover {
+  color: $icon3;
+}
+
+.footer {
+  // Footer Styles
+  text-align: center;
+  width: 100%;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.footer a {
+  // Footer Link
+  font-size: 4em;
+  text-decoration: none;
+}

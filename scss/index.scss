@@ -1,5 +1,58 @@
-@import 'variables';
+@import 'global';
 
-body {
-  background: $bg-primary;
+#article {
+  color: $text-primary;
+  text-decoration: none;
+}
+
+#article:hover {
+  color: $text-secondary;
+}
+
+.hero {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: $card;
+  text-align: center;
+  font-family: $font-primary;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.hero-text {
+  margin: 0;
+  color: $text-primary;
+  text-decoration: none;
+  font-size: 3em;
+  padding-top: 1.4em;
+}
+
+.hero-text-subtitle {
+  color: $text-secondary;
+  font-size: 1.5em;
+  padding-bottom: 2em;
+}
+
+.articles {
+  grid-template-columns: auto;
+  font-family: $font-primary;
+  display: grid;
+  grid-row-gap: 30px;
+  justify-content: space-evenly;
+}
+@media only screen and (min-width: 800px) {
+  .articles {
+    grid-template-columns: auto auto;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .articles {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+.grid-item {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
 }

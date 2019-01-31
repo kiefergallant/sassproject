@@ -1,0 +1,50 @@
+@import 'global';
+
+#breadcrumb {
+  text-decoration: none;
+  color: $text-secondary;
+  font-size: 1.2em;
+}
+
+#breadcrumb:hover {
+  color: $card;
+}
+
+#article-title {
+  color: $text-primary;
+  text-align: center;
+  font-size: 3em;
+}
+
+#article-subtitle {
+  color: $text-secondary;
+  text-align: center;
+  font-size: 2em;
+}
+
+#article-content {
+  color: $text-primary;
+  text-align: justify;
+  font-size: 1.2em;
+}
+
+.article-image {
+  width: 100%;
+}
+
+.article-body {
+  max-width: 80%;
+  margin: 0 auto;
+  font-family: $font-primary;
+  padding: 30px;
+}
+@media only screen and (min-width: 800px) {
+  .article-body {
+    max-width: 80%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .article-body {
+    max-width: 70%;
+  }
+}
