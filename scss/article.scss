@@ -1,50 +1,90 @@
+// Import Global Variables
 @import 'global';
 
 #breadcrumb {
-  text-decoration: none;
+  // Breadcrumb Styles
   color: $text-secondary;
+  text-decoration: none;
   font-size: 1.2em;
 }
 
 #breadcrumb:hover {
-  color: $card;
+  // Bredcrumb Hover Styles
+  color: $text-primary;
+
 }
 
 #article-title {
+  // Article Title Styles
   color: $text-primary;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
   text-align: center;
   font-size: 3em;
 }
 
 #article-subtitle {
+  // Article Subtitle Styles
+  color: $text-secondary;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding-top: 15px;
+  font-size: 2em;
+}
+
+#article-subtitle-centered {
+  // Article Centered Subtitle Styles
   color: $text-secondary;
   text-align: center;
+  padding-top: 15px;
   font-size: 2em;
 }
 
 #article-content {
+  // Article Alignment
   color: $text-primary;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
   text-align: justify;
   font-size: 1.2em;
 }
 
 .article-image {
+  // Article Image Styles
   width: 100%;
 }
 
+.article-sub-image {
+  // Article Sub-image Styles
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  margin-top: 40px;
+}
+
 .article-body {
+  // Article Body Styles
   max-width: 80%;
   margin: 0 auto;
   font-family: $font-primary;
-  padding: 30px;
+  padding: 60px 30px 30px 30px
 }
 @media only screen and (min-width: 800px) {
   .article-body {
+    // Article Body Width @ 800px
     max-width: 80%;
   }
 }
 @media only screen and (min-width: 1200px) {
   .article-body {
+    // Article Body Width @ 1200px
     max-width: 70%;
   }
 }

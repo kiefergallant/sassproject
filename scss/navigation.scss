@@ -1,3 +1,4 @@
+// Import Global Variables
 @import 'global';
 
 #logo {
@@ -29,5 +30,5 @@
 
 .navigation a:hover {
   // Navigation Link Hover
-  color: $card;
+  color: $text-secondary;
 }

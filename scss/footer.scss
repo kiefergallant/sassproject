@@ -1,21 +1,25 @@
+// Import Global Variables
 @import 'global';
 
 #fb,
 #li,
 #sc {
-  // Icon Layout
+  // Icon Color
   color: $text-secondary;
 }
 
 #fb:hover {
+  // Facebook Color
   color: $icon1;
 }
 
 #sc:hover {
+  // Snapchat Color
   color: $icon2;
 }
 
 #li:hover {
+  // Linkedin Color
   color: $icon3;
 }
 

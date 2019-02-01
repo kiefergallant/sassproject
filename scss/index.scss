@@ -1,18 +1,22 @@
+// Import Global Variables
 @import 'global';
 
 #article {
+  // Article Text
   color: $text-primary;
   text-decoration: none;
 }
 
 #article:hover {
+  // Article Text Hover
   color: $text-secondary;
 }
 
 .hero {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  // Hero Styles
   background-color: $card;
+  padding-top: 40px;
+  padding-bottom: 40px;
   text-align: center;
   font-family: $font-primary;
   width: 100%;
@@ -20,20 +24,24 @@
 }
 
 .hero-text {
-  margin: 0;
+  // Hero Title Styles
   color: $text-primary;
+  margin: 0;
   text-decoration: none;
   font-size: 3em;
   padding-top: 1.4em;
 }
 
 .hero-text-subtitle {
+    // Hero Subtitle Styles
   color: $text-secondary;
   font-size: 1.5em;
   padding-bottom: 2em;
 }
 
 .articles {
+  // Article List Styles
+  // One Column
   grid-template-columns: auto;
   font-family: $font-primary;
   display: grid;
@@ -42,16 +50,19 @@
 }
 @media only screen and (min-width: 800px) {
   .articles {
+    // Two Columns
     grid-template-columns: auto auto;
   }
 }
 @media only screen and (min-width: 1200px) {
   .articles {
+    // Three Columns
     grid-template-columns: auto auto auto;
   }
 }
 
 .grid-item {
+  // Article Alignment
   padding: 20px;
   font-size: 30px;
   text-align: center;
