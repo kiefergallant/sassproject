@@ -10,49 +10,81 @@
 
 .breadcrumb:hover {
   // Bredcrumb Hover Styles
-  color: $text-primary;
+  color: $hover;
 
+}
+
+.toc-title {
+  color: $text-secondary;
+  font-family: $font-primary;
+  font-size: 2em;
+}
+
+.toc-body {
+  color: $text-secondary;
+  font-family: $font-primary;
+
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-bottom: 25px;
+
+}
+
+.toc-body a {
+  color: $text-secondary;
+  font-family: $font-primary;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.toc-body a:hover, .toc-body a:active {
+  color: $hover;
 }
 
 .article-title {
   // Article Title Styles
   color: $text-primary;
+  font-family: $font-primary;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
   text-align: center;
+  padding-bottom: 5px;
   font-size: 3em;
 }
 
 .article-subtitle {
   // Article Subtitle Styles
   color: $text-secondary;
+  font-family: $font-primary;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
-  padding-top: 15px;
+
   font-size: 2em;
 }
 
 .article-subtitle-centered {
   // Article Centered Subtitle Styles
   color: $text-secondary;
+  font-family: $font-primary;
   text-align: center;
-  padding-top: 15px;
   font-size: 2em;
 }
 
 .article-content {
   // Article Alignment
   color: $text-primary;
+  font-family: $font-primary;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
   text-align: justify;
-  font-size: 1.2em;
+  font-size: 1.12em;
 }
 
 .article-image {

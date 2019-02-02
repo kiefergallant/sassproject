@@ -23,5 +23,7 @@
     "gulp-csso": "latest",
     "fancy-log": "latest"
   },
-  "dependencies": {}
+  "dependencies": {
+    "jekyll": "^3.0.0-beta1"
+  }
 }
