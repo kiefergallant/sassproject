@@ -1,20 +1,20 @@
 // Import Global Variables
 @import 'global';
 
-#breadcrumb {
+.breadcrumb {
   // Breadcrumb Styles
   color: $text-secondary;
   text-decoration: none;
   font-size: 1.2em;
 }
 
-#breadcrumb:hover {
+.breadcrumb:hover {
   // Bredcrumb Hover Styles
   color: $text-primary;
 
 }
 
-#article-title {
+.article-title {
   // Article Title Styles
   color: $text-primary;
   display: block;
@@ -25,7 +25,7 @@
   font-size: 3em;
 }
 
-#article-subtitle {
+.article-subtitle {
   // Article Subtitle Styles
   color: $text-secondary;
   display: block;
@@ -36,7 +36,7 @@
   font-size: 2em;
 }
 
-#article-subtitle-centered {
+.article-subtitle-centered {
   // Article Centered Subtitle Styles
   color: $text-secondary;
   text-align: center;
@@ -44,7 +44,7 @@
   font-size: 2em;
 }
 
-#article-content {
+.article-content {
   // Article Alignment
   color: $text-primary;
   display: block;

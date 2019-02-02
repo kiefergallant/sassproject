@@ -1,17 +1,6 @@
 // Import Global Variables
 @import 'global';
 
-#article {
-  // Article Text
-  color: $text-primary;
-  text-decoration: none;
-}
-
-#article:hover {
-  // Article Text Hover
-  color: $text-secondary;
-}
-
 .hero {
   // Hero Styles
   background-color: $card;
@@ -37,6 +26,17 @@
   color: $text-secondary;
   font-size: 1.5em;
   padding-bottom: 2em;
+}
+
+.article {
+  // Article Text
+  color: $text-primary;
+  text-decoration: none;
+}
+
+.article:hover {
+  // Article Text Hover
+  color: $text-secondary;
 }
 
 .articles {
