@@ -3,7 +3,7 @@
 
 .breadcrumb {
   // Breadcrumb Styles
-  color: $text-secondary;
+  color: $text-primary;
   text-decoration: none;
   font-size: 1.2em;
 }
@@ -11,26 +11,26 @@
 .breadcrumb:hover {
   // Bredcrumb Hover Styles
   color: $hover;
-
 }
 
 .toc-title {
+  // Table Of Contents Title Styles
   color: $text-secondary;
   font-family: $font-primary;
   font-size: 2em;
 }
 
 .toc-body {
+  // Table Of Contents Body Styles
   color: $text-secondary;
   font-family: $font-primary;
-
-  padding-top: 20px;
+  padding-top: 15px;
   padding-left: 30px;
-  padding-bottom: 25px;
-
+  padding-bottom: 10px;
 }
 
 .toc-body a {
+  // Table Of Contents Link Styles
   color: $text-secondary;
   font-family: $font-primary;
   text-decoration: none;
@@ -39,6 +39,7 @@
 }
 
 .toc-body a:hover, .toc-body a:active {
+  // Table Of Contents Link Hover Styles
   color: $hover;
 }
 
@@ -46,12 +47,8 @@
   // Article Title Styles
   color: $text-primary;
   font-family: $font-primary;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-  text-align: center;
-  padding-bottom: 5px;
+  margin: 0;
+  padding-bottom: 30px;
   font-size: 3em;
 }
 
@@ -60,10 +57,10 @@
   color: $text-secondary;
   font-family: $font-primary;
   display: block;
+  padding: 5px;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
-
   font-size: 2em;
 }
 
@@ -71,6 +68,7 @@
   // Article Centered Subtitle Styles
   color: $text-secondary;
   font-family: $font-primary;
+  padding: 5px;
   text-align: center;
   font-size: 2em;
 }
@@ -101,6 +99,11 @@
   margin-top: 40px;
 }
 
+.article-image, .article-sub-image {
+  // Article Photo Shadows
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .article-body {
   // Article Body Styles
   max-width: 80%;
@@ -108,12 +111,14 @@
   font-family: $font-primary;
   padding: 60px 30px 30px 30px
 }
+
 @media only screen and (min-width: 800px) {
   .article-body {
     // Article Body Width @ 800px
     max-width: 80%;
   }
 }
+
 @media only screen and (min-width: 1200px) {
   .article-body {
     // Article Body Width @ 1200px

@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
   <link rel="stylesheet" href="http://necolas.github.io/normalize.css/8.0.1/normalize.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Roboto|Staatliches" rel="stylesheet">
@@ -11,42 +11,62 @@
   <link rel="stylesheet" href="./css/navigation.css">
   <link rel="stylesheet" href="./css/footer.css">
   <link rel="stylesheet" href="./css/index.css">
-  <title>SCSS Example</title>
+  <title>SCSS Blog</title>
 </head>
 
 <body>
+
   <!-- Navigation -->
   <nav class="navigation">
-    <a href="index.html" class="logo">SCSS Example</a>
-    <a href="about.html" class="help"><i class="fas fa-question-circle"></i></a>
+    <a href="./index.html" class="logo">SCSS Blog</a>
+    <a href="./about.html" class="help"><i class="fas fa-question-circle"></i></a>
   </nav>
+
   <!-- Hero -->
-  <div class="hero editable" id="untitled-region-3">
-    <h1 id="untitled-region-1" class="hero-text">SCSS Blog</h1>
-    <h2 id="untitled-region-2" class="hero-text-subtitle">James &amp; Kiefer</h2>
+  <div class="hero" id="hero">
+    <h1 class="hero-title editable" id="hero-title">SCSS Blog</h1>
+    <h2 class="hero-subtitle editable" id="hero-subtitle">James &amp; Kiefer</h2>
   </div>
-  <!-- Article List -->
-  <div class="articles">
-    <!-- Article 1 -->
+
+  <!-- Post List -->
+  <div class="post-container">
+
+    <!-- Post 1 -->
     <div class="grid-item">
-      <a class="article" href="./blog/article1.html" id="article1">
-        <!-- Article Image -->
-        <img class="editable" src="https://via.placeholder.com/300/e8e8e8/282828?text=Article1" alt="Article 1" id="thumbnail1" />
-        <!-- Article Content -->
-        <h3 class="editable" id="title1">Article 1</h3>
-        <p style="font-size: 0.7em;" class="editable" id="description1">Nunc tincidunt maximus sapien.</p>
+      <a class="post" href="./blog/article1.html" id="article1">
+        <img class="post-image editable" src="https://via.placeholder.com/800x450/e8e8e8/282828?text=Article1" alt="Article 1" id="thumbnail1" />
+        <h3 class="post-title editable" id="title1">Article 1</h3>
+        <p class="post-subtitle editable" id="description1">Nunc tincidunt maximus sapien.</p>
       </a>
     </div>
+
+    <!-- Post 2 -->
+    <div class="grid-item">
+      <a class="post" href="./blog/article2.html" id="article2">
+        <img class="post-image editable" src="https://via.placeholder.com/800x450/e8e8e8/282828?text=Article2" alt="Article 2" id="thumbnail2" />
+        <h3 class="post-title editable" id="title2">Article 2</h3>
+        <p class="post-subtitle editable" id="description2">Nunc tincidunt maximus sapien.</p>
+      </a>
+    </div>
+
+    <!-- Post 3 -->
+    <div class="grid-item">
+      <a class="post" href="./blog/article3.html" id="article3">
+        <img class="post-image editable" src="https://via.placeholder.com/800x450/e8e8e8/282828?text=Article3" alt="Article 3" id="thumbnail3" />
+        <h3 class="post-title editable" id="title3">Article 3</h3>
+        <p class="post-subtitle editable" id="description3">Nunc tincidunt maximus sapien.</p>
+      </a>
+    </div>
+
   </div>
+
   <!-- Footer -->
   <div class="footer">
-    <!-- Facebook -->
     <a href="about.html" class="fb"><i class="fab fa-facebook"></i></a>
-    <!-- Snapchat -->
     <a href="about.html" class="sc"><i class="fab fa-snapchat-square"></i></a>
-    <!-- Linkedin -->
     <a href="about.html" class="li"><i class="fab fa-linkedin"></i></a>
   </div>
+
 </body>
 
 </html>

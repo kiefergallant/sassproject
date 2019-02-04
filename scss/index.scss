@@ -3,16 +3,17 @@
 
 .hero {
   // Hero Styles
-  background-color: $card;
+  background-color: $bg-secondary;
   padding-top: 40px;
   padding-bottom: 40px;
   text-align: center;
   font-family: $font-primary;
   width: 100%;
   margin-bottom: 50px;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
 }
 
-.hero-text {
+.hero-title {
   // Hero Title Styles
   color: $text-primary;
   margin: 0;
@@ -21,48 +22,61 @@
   padding-top: 1.4em;
 }
 
-.hero-text-subtitle {
-    // Hero Subtitle Styles
+.hero-subtitle {
+  // Hero Subtitle Styles
   color: $text-secondary;
   font-size: 1.5em;
   padding-bottom: 2em;
 }
 
-.article {
-  // Article Text
-  color: $text-primary;
-  text-decoration: none;
+.post {
+    text-decoration: none;
+    color: $text-primary;
 }
 
-.article:hover {
-  // Article Text Hover
-  color: $hover;
+.post:hover, .post:active {
+    color: $hover;
 }
 
-.articles {
-  // Article List Styles
+.post-container {
+  // Article Container
   // One Column
   grid-template-columns: auto;
   font-family: $font-primary;
   display: grid;
   grid-row-gap: 30px;
   justify-content: space-evenly;
+
 }
+
 @media only screen and (min-width: 800px) {
-  .articles {
-    // Two Columns
-    grid-template-columns: auto auto;
+  .post-container {
+    // Post Container Width @ 800px
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
   }
 }
-@media only screen and (min-width: 1200px) {
-  .articles {
-    // Three Columns
-    grid-template-columns: auto auto auto;
+
+.post-image {
+  // Post Image
+  max-width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.post-image:hover {
+  opacity: 0.8;
+}
+
+@media only screen and (min-width: 800px) {
+  .post-image {
+    // Post Image Wdith @ 800px
+    max-width: 80%;
   }
 }
 
 .grid-item {
-  // Article Alignment
+  // Grid Alignment
   padding: 20px;
   font-size: 30px;
   text-align: center;
