@@ -30,14 +30,17 @@
     <!-- Article Breadcrumb -->
     <a class="breadcrumb editable" href="../index.html" id="breadcrumb">Home / Article Title</a>
 
-    <!-- Article Table Of Contents -->
-    <div class="toc-body"></div>
-
     <!-- Article Title -->
     <h2 class="article-title editable" id="title1">Article Title</h2>
 
     <!-- Article Image -->
     <img class="article-image editable" src="https://via.placeholder.com/1000x500/e8e8e8/282828?text=Photo" alt="Article 1" id="image1">
+
+    <!-- Article Table Of Contents -->
+    <div class="toc-container">
+      <button class="toc-button" onclick="tocToggle()">Table of Contents</button>
+      <div class="toc-body" style="display: none;" id="toc"></div>
+    </div>
 
     <!-- Article Topic -->
     <h3 class="article-subtitle" id="topic1">Article Subtitle</h3>
@@ -96,6 +99,16 @@
       // Which headings to grab inside of the contentSelector element.
       headingSelector: 'h3',
     });
+
+    function tocToggle() {
+      var x = document.getElementById("toc");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
   </script>
 
 </body>

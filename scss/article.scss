@@ -13,6 +13,36 @@
   color: $hover;
 }
 
+.toc-container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.toc-button {
+  color: $text-secondary;
+  border: 2px $bg-tertiary solid;
+  background-color: $bg-primary;
+  font-family: $font-secondary;
+  padding: 10px 20px;
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: 12pt;
+  outline: none;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.toc-button:hover {
+  color: $text-tertiary;
+  background-color: $text-secondary;
+  border: 2px $text-secondary solid;
+}
+
+.toc-button:active {
+  box-shadow: inset 2px 2px 2px $text-primary;
+}
+
 .toc-title {
   // Table Of Contents Title Styles
   color: $text-secondary;
@@ -24,9 +54,10 @@
   // Table Of Contents Body Styles
   color: $text-secondary;
   font-family: $font-primary;
-  padding-top: 15px;
-  padding-left: 30px;
-  padding-bottom: 10px;
+  margin-top: 10px;
+  padding-left: 40px;
+  padding-bottom: 30px;
+  display: none;
 }
 
 .toc-body a {
@@ -34,13 +65,15 @@
   color: $text-secondary;
   font-family: $font-primary;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 500;
   letter-spacing: 1px;
 }
 
-.toc-body a:hover, .toc-body a:active {
+.toc-body a:active,
+.toc-body a:hover {
   // Table Of Contents Link Hover Styles
-  color: $hover;
+  color: $text-secondary;
+  font-weight: 800;
 }
 
 .article-title {
@@ -57,9 +90,7 @@
   color: $text-secondary;
   font-family: $font-primary;
   display: block;
-  padding: 5px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   width: 80%;
   font-size: 2em;
 }
@@ -97,9 +128,11 @@
   margin-right: auto;
   width: 80%;
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 
-.article-image, .article-sub-image {
+.article-image,
+.article-sub-image {
   // Article Photo Shadows
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -109,16 +142,14 @@
   max-width: 80%;
   margin: 0 auto;
   font-family: $font-primary;
-  padding: 60px 30px 30px 30px
+  padding: 60px 30px 30px;
 }
-
 @media only screen and (min-width: 800px) {
   .article-body {
     // Article Body Width @ 800px
     max-width: 80%;
   }
 }
-
 @media only screen and (min-width: 1200px) {
   .article-body {
     // Article Body Width @ 1200px
