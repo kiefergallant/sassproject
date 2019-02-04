@@ -33,3 +33,22 @@
   // Navigation Link Hover
   color: $hover;
 }
+
+#fixed-button {
+  color: $text-primary;
+  font-size: 4em;
+  text-decoration: none;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding-bottom: 25px;
+  padding-right: 25px;
+}
+
+#fixed-button:hover {
+  color: $hover;
+}
+
+#fixed-button:active {
+  color: $bg-tertiary;
+}
