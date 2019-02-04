@@ -3,20 +3,14 @@
 
 .breadcrumb {
   // Breadcrumb Styles
-  color: $text-primary;
+  color: $text-secondary;
   text-decoration: none;
   font-size: 1.2em;
 }
 
 .breadcrumb:hover {
   // Bredcrumb Hover Styles
-  color: $hover;
-}
-
-.toc-container {
-  // Table Of Contents Container
-  margin: 0 auto;
-  width: 80%;
+  color: $text-primary;
 }
 
 .toc-button {
@@ -29,8 +23,7 @@
   font-weight: bold;
   font-size: 12pt;
   outline: none;
-  margin-top: 25px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   letter-spacing: 2px;
 }
 
@@ -43,8 +36,9 @@
 
 .toc-button:active {
   // Table Of Contents Button Click
-  background-color: rgb(100, 100, 100);
-  border-color: rgb(100, 100, 100);
+  color: $text-primary;
+  background-color: $bg-tertiary;
+  border-color: $bg-tertiary;
 }
 
 .toc-title {
@@ -58,9 +52,9 @@
   // Table Of Contents Body Styles
   color: $text-secondary;
   font-family: $font-primary;
-  margin-top: 10px;
+  margin-top: 20px;
   padding-left: 40px;
-  padding-bottom: 30px;
+  margin-bottom: 20px;
   display: none;
 }
 
@@ -80,59 +74,53 @@
   font-weight: 800;
 }
 
+.article-container {
+  // Article Container
+  width: 80%;
+  margin: 0 auto;
+}
+
 .article-title {
   // Article Title Styles
   color: $text-primary;
   font-family: $font-primary;
   margin: 10px 0 0;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   font-size: 3em;
 }
 
 .article-subtitle {
   // Article Subtitle Styles
-  color: $text-secondary;
+  color: $text-primary;
   font-family: $font-primary;
   display: block;
-  margin: 0 auto;
-  width: 80%;
+  padding-top: 5px;
+  margin: 0;
   font-size: 2em;
-}
-
-.article-subtitle-centered {
-  // Article Centered Subtitle Styles
-  color: $text-secondary;
-  font-family: $font-primary;
-  padding: 5px;
-  text-align: center;
-  font-size: 2em;
+  letter-spacing: 1px;
 }
 
 .article-content {
   // Article Alignment
-  color: $text-primary;
+  color: $text-secondary;
   font-family: $font-primary;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
   text-align: justify;
   font-size: 1.12em;
 }
 
 .article-image {
   // Article Image Styles
+  width: 100%;
   max-width: 100%;
+  margin-bottom: 10px;
 }
 
 .article-sub-image {
   // Article Sub-image Styles
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 80%;
+  width: 100%;
+  max-width: 100%;
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .article-image,

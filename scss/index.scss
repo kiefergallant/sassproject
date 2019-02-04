@@ -30,12 +30,13 @@
 }
 
 .post {
-    text-decoration: none;
-    color: $text-primary;
+  text-decoration: none;
+  color: $text-primary;
 }
 
-.post:hover, .post:active {
-    color: $hover;
+.post:active,
+.post:hover {
+  color: $hover;
 }
 
 .post-container {
@@ -46,9 +47,7 @@
   display: grid;
   grid-row-gap: 30px;
   justify-content: space-evenly;
-
 }
-
 @media only screen and (min-width: 800px) {
   .post-container {
     // Post Container Width @ 800px
@@ -67,7 +66,6 @@
 .post-image:hover {
   opacity: 0.8;
 }
-
 @media only screen and (min-width: 800px) {
   .post-image {
     // Post Image Wdith @ 800px
