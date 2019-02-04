@@ -14,17 +14,18 @@
 }
 
 .toc-container {
+  // Table Of Contents Container
   margin: 0 auto;
   width: 80%;
 }
 
 .toc-button {
+  // Table Of Contents Button
   color: $text-secondary;
   border: 2px $bg-tertiary solid;
   background-color: $bg-primary;
   font-family: $font-secondary;
   padding: 10px 20px;
-  border-radius: 2px;
   font-weight: bold;
   font-size: 12pt;
   outline: none;
@@ -34,13 +35,16 @@
 }
 
 .toc-button:hover {
+  // Table Of Contents Button Hover
   color: $text-tertiary;
   background-color: $text-secondary;
   border: 2px $text-secondary solid;
 }
 
 .toc-button:active {
-  box-shadow: inset 2px 2px 2px $text-primary;
+  // Table Of Contents Button Click
+  background-color: rgb(100, 100, 100);
+  border-color: rgb(100, 100, 100);
 }
 
 .toc-title {
@@ -80,7 +84,7 @@
   // Article Title Styles
   color: $text-primary;
   font-family: $font-primary;
-  margin: 0;
+  margin: 10px 0 0;
   padding-bottom: 30px;
   font-size: 3em;
 }
@@ -118,7 +122,7 @@
 
 .article-image {
   // Article Image Styles
-  width: 100%;
+  max-width: 100%;
 }
 
 .article-sub-image {
@@ -126,7 +130,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  max-width: 80%;
   margin-top: 40px;
   margin-bottom: 40px;
 }
@@ -143,16 +147,4 @@
   margin: 0 auto;
   font-family: $font-primary;
   padding: 60px 30px 30px;
-}
-@media only screen and (min-width: 800px) {
-  .article-body {
-    // Article Body Width @ 800px
-    max-width: 80%;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .article-body {
-    // Article Body Width @ 1200px
-    max-width: 70%;
-  }
 }
