@@ -1,2 +1,30 @@
 // Import Global Variables
 @import 'global';
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+
+
+.about-image{
+
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.name{
+  font-family:$font-primary;
+}
+
+.about{
+  font-family: $font-primary;
+
+}
+
+.email{
+  font-family: $font-primary;
+}
